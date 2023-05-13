@@ -1,0 +1,31 @@
+[versions]
+# Jetbrains
+jetbrains-kotlin = "1.8.20"
+jetbrains-compose = "1.4.0"
+jetbrains-coroutines-core = "1.6.4"
+jetbrains-datetime = "0.4.0"
+jetbrains-serialization-json = "1.4.1"
+jetbrains-collections-immutable = "0.3.5"
+
+# Other
+uuid = "0.6.0"
+kodein-di = "7.18.0"
+flowext = "0.5.0"
+molecule = "0.9.0"
+
+[libraries]
+# Jetbrains
+jetbrains-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "jetbrains-coroutines-core" }
+jetbrains-coroutines-swing = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-swing", version.ref = "jetbrains-coroutines-core" }
+
+jetbrains-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "jetbrains-datetime" }
+jetbrains-serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "jetbrains-serialization-json" }
+jetbrains-collections-immutable = { module = "org.jetbrains.kotlinx:kotlinx-collections-immutable", version.ref = "jetbrains-collections-immutable" }
+
+jetbrains-compose-ui-geometry = { module = "org.jetbrains.compose.ui:ui-geometry", version.ref = "jetbrains-compose" }
+
+# Other
+uuid = { module = "com.benasher44:uuid", version.ref = "uuid" }
+kodein-di-core = { module = "org.kodein.di:kodein-di", version.ref = "kodein-di" }
+kodein-di-compose = { module = "org.kodein.di:kodein-di-framework-compose", version.ref = "kodein-di" }
+flowext = { module = "io.github.hoc081098:FlowExt", version.ref = "flowext" }
